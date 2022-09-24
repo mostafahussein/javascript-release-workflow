@@ -28,8 +28,8 @@ jobs:
         run: git checkout ${BRANCH}
       - name: Set git user
         run: |
-          git config --global user.email "oking3@uncc.edu"
-          git config --global user.name "Oliver King"
+          git config --global user.email "mostafa.hussein91@gmail.com"
+          git config --global user.name "Mostafa Hussein"
       - name: Merge 
         if: ${{ steps.extract-branch-status.outputs.exists == 'true' }}
         env:
@@ -67,8 +67,8 @@ jobs:
       - name: Create pull request
         uses: peter-evans/create-pull-request@v3
         with:
-          committer: Oliver King <oking3@uncc.edu>
-          author: Oliver King <oking3@uncc.edu>
+          committer: (╯°□°）╯︵ uᴉǝssnH ɐɟɐʇsoW <mostafa.hussein91@gmail.com>
+          author: (╯°□°）╯︵ uᴉǝssnH ɐɟɐʇsoW <mostafa.hussein91@gmail.com>
           token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: Add node modules and compiled JavaScript from main
           title: ${{ github.event.inputs.release }} new release
